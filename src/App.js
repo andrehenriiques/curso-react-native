@@ -1,10 +1,13 @@
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { SafeAreaView, View, Text, StyleSheet } from 'react-native';
 //import Aleatory from './components/Aleatory';
 //import ButtonExec from './components/ButtonExec';
 //import Count from './components/Count';
 //import Dad from './components/direct/Dad';
-import Mother from './components/indirect/Mother';
+//import Mother from './components/indirect/Mother';
+//import CountV2 from './components/count/CountV2';
+//import Differentiate from './components/Differentiate';
+import ParImpar from './components/ParImpar';
 
 //import  First  from './components/First';
 //import MinMax from './components/MinMax';
@@ -13,8 +16,11 @@ import Mother from './components/indirect/Mother';
 
 export default () =>{
     return (
-    <View style={style.App}>
-        <Mother/>
+    <SafeAreaView style={style.App}>
+        <ParImpar  num={3}/>
+        {/* <Differentiate/> */}
+        {/* <CountV2/> */}
+        {/* <Mother/> */}
         {/* <Dad x={10} y={20}/> */}
         {/* <Title primary="Cadastro" secondary="Tela de Cadastro do Produto"/> */}
         {/* <Count start={100} pass={13}/> */}
@@ -25,7 +31,7 @@ export default () =>{
         <Comp1/>
         <Comp2/>
         <First/> */}
-    </View>
+    </SafeAreaView>
     )
 }
 
