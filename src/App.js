@@ -1,5 +1,9 @@
 import React from 'react';
 import { SafeAreaView, View, Text, StyleSheet } from 'react-native';
+
+//import ListProductsV2 from './components/products/ListProductsV2';
+import TypeYourName from './components/TypeYourName';
+//import ListProducts from './components/products/ListProducts';
 //import Aleatory from './components/Aleatory';
 //import ButtonExec from './components/ButtonExec';
 //import Count from './components/Count';
@@ -10,7 +14,7 @@ import { SafeAreaView, View, Text, StyleSheet } from 'react-native';
 //import ParImpar from './components/ParImpar';
 //import RelationshipFather from './components/relationship/RelationshipFather';
 //import RelationshipSon from './components/relationship/RelationshipSon';
-import UserLoggedin from './components/UserLoggedin';
+//import UserLoggedin from './components/UserLoggedin';
 
 //import  First  from './components/First';
 //import MinMax from './components/MinMax';
@@ -20,8 +24,11 @@ import UserLoggedin from './components/UserLoggedin';
 export default () =>{
     return (
     <SafeAreaView style={style.App}>
-        <UserLoggedin user={ {name: 'Gui', email: 'gui@gui.com'} }/>
-        <UserLoggedin user={ {name: 'Gui'} }/>
+        <TypeYourName/>
+        {/* <ListProductsV2/> */}
+        {/* <ListProducts/> */}
+        {/* <UserLoggedin user={ {name: 'Gui', email: 'gui@gui.com'} }/>
+        <UserLoggedin user={ {name: 'Gui'} }/> */}
         {/* <RelationshipFather>
             <RelationshipSon name="Carlos" surname="Arruda"></RelationshipSon>
             <RelationshipSon name="João" surname="Arruda"></RelationshipSon>
