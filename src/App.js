@@ -1,5 +1,10 @@
 import React from 'react';
 import { SafeAreaView, View, Text, StyleSheet } from 'react-native';
+import FlexboxV1 from './components/layout/FlexboxV1';
+import FlexboxV2 from './components/layout/FlexboxV2';
+import FlexboxV3 from './components/layout/FlexboxV3';
+import FlexboxV4 from './components/layout/FlexboxV4';
+import Square from './components/layout/Square';
 
 //import ListProductsV2 from './components/products/ListProductsV2';
 import TypeYourName from './components/TypeYourName';
@@ -24,7 +29,11 @@ import TypeYourName from './components/TypeYourName';
 export default () =>{
     return (
     <SafeAreaView style={style.App}>
-        <TypeYourName/>
+        <FlexboxV4/>
+        {/* <FlexboxV3/> */}
+        {/* <FlexboxV2/> */}
+        {/* <FlexboxV1/> */}
+        {/* <TypeYourName/> */}
         {/* <ListProductsV2/> */}
         {/* <ListProducts/> */}
         {/* <UserLoggedin user={ {name: 'Gui', email: 'gui@gui.com'} }/>
@@ -57,6 +66,5 @@ const style = StyleSheet.create({
         backgroundColor: '#fff',
         justifyContent: 'center',
         alignItems: 'center',
-        padding: 20
     }
 })
