@@ -7,7 +7,10 @@ import { SafeAreaView, View, Text, StyleSheet } from 'react-native';
 //import Mother from './components/indirect/Mother';
 //import CountV2 from './components/count/CountV2';
 //import Differentiate from './components/Differentiate';
-import ParImpar from './components/ParImpar';
+//import ParImpar from './components/ParImpar';
+//import RelationshipFather from './components/relationship/RelationshipFather';
+//import RelationshipSon from './components/relationship/RelationshipSon';
+import UserLoggedin from './components/UserLoggedin';
 
 //import  First  from './components/First';
 //import MinMax from './components/MinMax';
@@ -17,7 +20,13 @@ import ParImpar from './components/ParImpar';
 export default () =>{
     return (
     <SafeAreaView style={style.App}>
-        <ParImpar  num={3}/>
+        <UserLoggedin user={ {name: 'Gui', email: 'gui@gui.com'} }/>
+        <UserLoggedin user={ {name: 'Gui'} }/>
+        {/* <RelationshipFather>
+            <RelationshipSon name="Carlos" surname="Arruda"></RelationshipSon>
+            <RelationshipSon name="João" surname="Arruda"></RelationshipSon>
+        </RelationshipFather> */}
+        {/* <ParImpar  num={3}/> */}
         {/* <Differentiate/> */}
         {/* <CountV2/> */}
         {/* <Mother/> */}
