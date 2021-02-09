@@ -5,6 +5,7 @@ import FlexboxV2 from './components/layout/FlexboxV2';
 import FlexboxV3 from './components/layout/FlexboxV3';
 import FlexboxV4 from './components/layout/FlexboxV4';
 import Square from './components/layout/Square';
+import Mega from './components/mega/Mega';
 
 //import ListProductsV2 from './components/products/ListProductsV2';
 import TypeYourName from './components/TypeYourName';
@@ -29,7 +30,8 @@ import TypeYourName from './components/TypeYourName';
 export default () =>{
     return (
     <SafeAreaView style={style.App}>
-        <FlexboxV4/>
+        <Mega qtNumber={12}/>
+        {/* <FlexboxV4/> */}
         {/* <FlexboxV3/> */}
         {/* <FlexboxV2/> */}
         {/* <FlexboxV1/> */}
